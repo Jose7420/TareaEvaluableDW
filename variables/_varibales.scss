@@ -1,0 +1,40 @@
+// Variables 
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+
+$font-sizes: (
+    "cuerpo": 1rem,
+    "h3":150%,
+    "h2":200%,
+    "h1":300%,
+    "nav ul li":110%,
+    "footer p":80%
+);
+
+
+$font-weigths: (
+    "ligth":300,
+    "regular":400,
+    "bold":700
+);
+
+@mixin color-fondo {
+    @for $i from 1 through 6 {
+        article:nth-child(#{$i}) {
+            background-color: color-aleatorio(null, 0.5);
+
+        }
+
+    }
+}
+
+$font-family: 'Nunito', sans-serif;
+
+$cuerpo: map-get($font-weigths, "regular") map-get($font-sizes, "cuerpo") $font-family;
+
+$default-foreground: color-aleatorio(rojo, 0.7); // rgb(30, 30, 30);
+$default-background: #eee;
+
+$color-titulo: color-aleatorio(rojo);
+$color-subtitulo: color-aleatorio(verde);

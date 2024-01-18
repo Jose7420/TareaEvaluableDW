@@ -1,0 +1,139 @@
+/* Fuente de texto */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,400&family=Pacifico&family=Poppins:ital,wght@1,300&display=swap");
+/* Estilo Globales*/
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+  color: rgba(175, 0, 0, 0.7);
+}
+
+h1 {
+  font: 700 300% "Nunito", sans-serif;
+}
+h2 {
+  font: 700 200% "Nunito", sans-serif;
+}
+h3 {
+  font: 700 150% "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(175, 0, 0, 0.7);
+}
+
+/*  CABECERA */
+header {
+  text-align: center;
+  background-color: #eee;
+  padding: 0.5em;
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1,
+header h2 {
+  width: 90%;
+  margin: 0;
+}
+header h1 {
+  color: rgb(226, 0, 0);
+}
+header h2 {
+  color: rgb(0, 64, 0);
+}
+
+/* MENU*/
+nav {
+  background-color: #eee;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0.5em 0 0 0;
+  padding: 0.1em;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 110% "Nunito", sans-serif;
+}
+nav ul li a {
+  font-weight: 400;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* Seccion */
+section {
+  margin: 2em;
+}
+section article:nth-child(1) {
+  background-color: rgba(71, 172, 96, 0.5);
+}
+section article:nth-child(2) {
+  background-color: rgba(8, 95, 125, 0.5);
+}
+section article:nth-child(3) {
+  background-color: rgba(103, 77, 143, 0.5);
+}
+section article:nth-child(4) {
+  background-color: rgba(112, 25, 179, 0.5);
+}
+section article:nth-child(5) {
+  background-color: rgba(90, 185, 140, 0.5);
+}
+section article:nth-child(6) {
+  background-color: rgba(111, 127, 57, 0.5);
+}
+section article {
+  padding: 0;
+  min-height: 15em;
+  width: 33%;
+  display: inline-block;
+}
+section article a img {
+  float: left;
+  margin-right: 0.5em;
+  width: 24%;
+}
+section article p {
+  width: 70%;
+  float: left;
+  padding-right: 0.5em;
+}
+section article h3 {
+  padding: 0;
+  margin: 0;
+  width: 74%;
+  float: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+footer div {
+  background-color: #eee;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0 0 0;
+}
+footer div img {
+  width: 3em;
+}
+footer p {
+  background-color: #eee;
+  margin: 0;
+  padding: 0.1em 0;
+  font: 300 80% "Nunito", sans-serif;
+}/*# sourceMappingURL=estilo.css.map */

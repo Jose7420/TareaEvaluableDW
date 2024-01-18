@@ -1,0 +1,26 @@
+@function color-aleatorio($opcion: null, $opacity: null) {
+
+
+
+    @if(not($opacity)) {
+        $opacity: 1;
+    }
+
+    $aletatorio: rgba((random(256)-1), (random(256)-1), (random(256)-1), $opacity);
+
+    @if ($opcion =="rojo") {
+        @return rgba(red($aletatorio), 0, 0, $opacity);
+
+    }
+
+    @else if($opcion =="verde") {
+
+        @return rgba(0, green($aletatorio), 0, $opacity);
+    }
+
+    @else if($opcion =="azul") {
+        @return rgba(0, 0, blue($aletatorio), $opacity);
+    }
+
+    @return $aletatorio;
+}

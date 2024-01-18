@@ -1,0 +1,164 @@
+/* Fuente de texto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,400&family=Pacifico&family=Poppins:ital,wght@1,300&display=swap');
+@import 'funciones';
+@import '../variables/varibales';
+
+/* Estilo Globales*/
+html {
+    max-width: $max-width;
+    margin: 0 auto;
+
+}
+
+body {
+    font: $cuerpo;
+    color: $default-foreground;
+
+
+}
+
+
+h {
+    &1 {
+        font:map-get($font-weigths, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+    }
+
+    &2 {
+        font:map-get($font-weigths, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+
+    }
+
+    &3 {
+        font:map-get($font-weigths, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $default-foreground;
+
+}
+
+/*  CABECERA */
+header {
+    text-align: center;
+    background-color: $default-background;
+    padding: 0.5em;
+
+    img {
+        width: 10%;
+        float: left;
+    }
+
+    h1,
+    h2 {
+        width: 90%;
+        margin: $default-margin;
+    }
+
+    h1 {
+        color: $color-titulo;
+    }
+
+    h2 {
+        color: $color-subtitulo;
+    }
+
+}
+
+/* MENU*/
+nav {
+    background-color: $default-background;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.5em 0 0 0;
+    padding: 0.1em;
+
+    ul {
+        list-style: none;
+        margin: $default-margin;
+
+        li {
+            display: inline-block;
+            margin: $default-margin;
+            padding: 0.2em;
+            font:map-get($font-weigths, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+
+            a {
+                font-weight: map-get($font-weigths, "regular");
+
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: map-get($font-weigths, "bold");
+                }
+            }
+        }
+    }
+}
+
+/* Seccion */
+section {
+
+    @include color-fondo;
+    // padding:1rem;
+    margin:2em;
+
+
+   
+    article {
+        padding: $default-padding;  
+        min-height: 15em;;
+        // width: 85%;
+        width: 33%;
+        display: inline-block;  
+        
+        
+    
+        a{
+            img {
+            float: left;
+            margin-right: 0.5em;
+            width: 24%
+            }
+        }
+        p{
+            width: 70%;
+            float:left;
+            padding-right:0.5em;
+        }
+        h3{
+            padding: $default-padding;
+            margin: $default-margin;
+            width: 74%;
+            float: left;
+        }
+    }
+
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+
+    div {
+        background-color: $default-background;
+        margin-bottom: 0.5em;
+        padding: 0.2em 0 0 0;
+
+        img {
+            width: 3em;
+
+        }
+    }
+
+    p {
+        background-color: $default-background;
+        margin: $default-margin;
+        padding: 0.1em 0;
+        font:map-get($font-weigths, "ligth") map-get($font-sizes, quote(#{&})) $font-family;
+
+    }
+
+}
