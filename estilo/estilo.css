@@ -8,7 +8,7 @@ html {
 
 body {
   font: 400 1rem "Nunito", sans-serif;
-  color: rgba(175, 0, 0, 0.7);
+  color: rgba(48, 0, 0, 0.7);
 }
 
 h1 {
@@ -23,7 +23,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: rgba(175, 0, 0, 0.7);
+  color: rgba(48, 0, 0, 0.7);
 }
 
 /*  CABECERA */
@@ -42,10 +42,10 @@ header h2 {
   margin: 0;
 }
 header h1 {
-  color: rgb(226, 0, 0);
+  color: rgb(86, 0, 0);
 }
 header h2 {
-  color: rgb(0, 64, 0);
+  color: rgb(0, 193, 0);
 }
 
 /* MENU*/
@@ -76,31 +76,33 @@ nav ul li a:hover {
 
 /* Seccion */
 section {
-  margin: 2em;
+  margin: 2em 0 2em 0;
 }
 section article:nth-child(1) {
-  background-color: rgba(71, 172, 96, 0.5);
+  background-color: rgba(129, 209, 70, 0.5);
 }
 section article:nth-child(2) {
-  background-color: rgba(8, 95, 125, 0.5);
+  background-color: rgba(125, 112, 17, 0.5);
 }
 section article:nth-child(3) {
-  background-color: rgba(103, 77, 143, 0.5);
+  background-color: rgba(50, 8, 223, 0.5);
 }
 section article:nth-child(4) {
-  background-color: rgba(112, 25, 179, 0.5);
+  background-color: rgba(131, 209, 83, 0.5);
 }
 section article:nth-child(5) {
-  background-color: rgba(90, 185, 140, 0.5);
+  background-color: rgba(164, 69, 6, 0.5);
 }
 section article:nth-child(6) {
-  background-color: rgba(111, 127, 57, 0.5);
+  background-color: rgba(233, 91, 249, 0.5);
 }
 section article {
   padding: 0;
   min-height: 15em;
   width: 33%;
   display: inline-block;
+  margin-bottom: 0.1em;
+  margin-right: 0.1em;
 }
 section article a img {
   float: left;
