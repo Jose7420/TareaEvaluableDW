@@ -101,34 +101,32 @@ nav {
 section {
 
     @include color-fondo;
-    
-    margin:2em 0 2em 0;
-   
+
+    margin: 2em 0 2em 0;
+
     article {
-        padding: $default-padding;  
-        min-height: 15em;;
-        // width: 85%;
+        padding: $default-padding;
+        min-height: 15em;       
         width: 33%;
-        display: inline-block;  
+        display: inline-block;
         margin-bottom: 0.1em;
         margin-right: 0.1em;
 
-        
-        
-    
-        a{
+        a {
             img {
-            float: left;
-            margin-right: 0.5em;
-            width: 24%
+                float: left;
+                margin-right: 0.5em;
+                width: 24%;
             }
         }
-        p{
+
+        p {
             width: 70%;
-            float:left;
-            padding-right:0.5em;
+            float: left;
+            padding-right: 0.5em;
         }
-        h3{
+
+        h3 {
             padding: $default-padding;
             margin: $default-margin;
             width: 74%;
@@ -162,4 +160,64 @@ footer {
 
     }
 
+}
+
+@media  (max-width: 992px) {
+    section {
+        
+        article {
+            
+            width: 49.5%;        
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body{
+        margin: $default-margin;
+    }
+    header{
+
+        h1,h2{
+           width: 100%;            
+        }
+        
+        img{
+            float:none;
+            width: 20%;
+        }
+        
+        
+        
+    }
+    nav{
+        margin: $default-margin;
+        ul{
+            li{
+                display: block
+          }
+
+        }
+       
+      
+
+    }
+    
+
+    section {
+
+        margin:$default-margin;
+
+        article {
+            width: 100%;
+            display: block;
+            margin:$default-margin;
+            h3,p,img{
+                float:none;
+            }
+
+        }
+    }
 }
