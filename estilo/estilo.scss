@@ -109,15 +109,13 @@ section {
         min-height: 15em;       
         width: 33%;
         display: inline-block;
-        margin-bottom: 0.1em;
-        // margin-right: 0.1em;
+        margin-bottom: 0.1em;        
         margin-right: 0.005;
 
 
         a {
             img {
-                float: left;
-                // margin-right: 0.5em;
+                float: left;               
                 width: 24%;
             }
         }
@@ -190,9 +188,7 @@ footer {
             float:none;
             width: 20%;
         }
-        
-        
-        
+      
     }
     nav{
         margin: $default-margin;
@@ -203,8 +199,6 @@ footer {
 
         }
        
-      
-
     }
     
 
