@@ -101,7 +101,7 @@ nav {
 section {
 
     @include color-fondo;
-
+    
     margin: 2em 0 2em 0;
 
     article {
@@ -110,12 +110,14 @@ section {
         width: 33%;
         display: inline-block;
         margin-bottom: 0.1em;
-        margin-right: 0.1em;
+        // margin-right: 0.1em;
+        margin-right: 0.005;
+
 
         a {
             img {
                 float: left;
-                margin-right: 0.5em;
+                // margin-right: 0.5em;
                 width: 24%;
             }
         }
